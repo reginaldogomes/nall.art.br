@@ -14,7 +14,7 @@ export const HeroSection = () => {
   return (
     <section
       id="home"
-      className="flex flex-col items-center justify-center min-h-screen text-center p-4"
+      className="flex flex-col items-center justify-center min-h-6 text-center p-4"
     >
       <div className="space-y-4">
         <h1 className="text-6xl md:text-8xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-zinc-400 to-white">
