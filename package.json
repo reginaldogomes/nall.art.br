@@ -4,11 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "cf:build": "next-on-pages",
-    "cf:deploy": "wrangler pages deploy .vercel/output/static --project-name=SEU_PROJETO"
+    "build": "npx next-on-pages && next build",
+    "deploy": "wrangler pages deploy .vercel/output/static"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.1.10",
