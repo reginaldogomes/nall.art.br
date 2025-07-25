@@ -6,7 +6,9 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cf:build": "next-on-pages",
+    "cf:deploy": "wrangler pages deploy .vercel/output/static --project-name=SEU_PROJETO"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.1.10",
