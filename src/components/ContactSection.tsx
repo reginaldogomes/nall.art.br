@@ -10,7 +10,10 @@ export const ContactSection = () => {
   const email = "contato@nall.dj";
 
   return (
-    <footer id="contato" className="py-20 text-center border-t border-zinc-800">
+    <footer
+      id="contato"
+      className="py-20 text-center border border-zinc-800 rounded-lg bg-zinc-900/30"
+    >
       <div className="container mx-auto max-w-3xl px-4">
         <h2 className="text-3xl md:text-4xl font-bold mb-8">
           Entre em Contato
@@ -56,10 +59,6 @@ export const ContactSection = () => {
             <LinkIcon className="h-7 w-7" />
           </a>
         </div>
-        <p className="text-zinc-500 mt-12 text-sm">
-          &copy; {new Date().getFullYear()} DJ Nall. Todos os direitos
-          reservados.
-        </p>
       </div>
     </footer>
   );

@@ -1,17 +1,22 @@
-// Main.tsx
-interface MainProps {
-  children: React.ReactNode;
-}
+"use client";
 
-const Main: React.FC<MainProps> = ({ children }) => {
+import { ReactNode } from "react";
+import { cn } from "@/lib/utils"; // se estiver usando utilitário de className opcional
+
+type MainProps = {
+  children: ReactNode;
+  className?: string;
+};
+
+export function Main({ children, className }: MainProps) {
   return (
     <main
-      className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start"
-      style={{ width: "100vw", height: "100vh" }}
+      className={cn(
+        "flex flex-col relative z-10 mx-auto w-full max-w-7xl gap-8 px-4",
+        className
+      )}
     >
       {children}
     </main>
   );
-};
-
-export default Main;
+}

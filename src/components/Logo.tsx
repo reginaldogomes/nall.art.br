@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { cn } from "@/lib/utils"; // use isso se estiver usando Tailwind + className utils
 
 interface LogoProps {
   alt?: string;
@@ -8,19 +9,21 @@ interface LogoProps {
 
 const Logo = ({
   alt = "Nall - Deejay and Music Producer",
-  aspectRatio = "1 / 1",
-  className = "",
+  aspectRatio,
+  className,
 }: LogoProps) => {
   return (
-    <div className={`relative w-full ${className}`} style={{ aspectRatio }}>
-      <Image
-        src="/logo.png"
-        alt={alt}
-        className="object-contain"
-        width={300}
-        height={300}
-      />
-    </div>
+    <Image
+      src="/logo.png"
+      alt={alt}
+      width={300}
+      height={300}
+      className={cn(
+        "m-0 p-0 block object-contain",
+        aspectRatio && `aspect-[${aspectRatio}]`,
+        className
+      )}
+    />
   );
 };
 

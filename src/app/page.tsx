@@ -1,18 +1,21 @@
 import AboutSection from "@/components/About";
 import { ContactSection } from "@/components/ContactSection";
+import { CtaSection } from "@/components/CtaSection";
+import { Footer } from "@/components/Footer";
 import { HeroSection } from "@/components/Hero";
 import HighlightsSection from "@/components/HighlightsSection";
 import RepertoireSection from "@/components/RepertoireSection";
+
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <HeroSection />
-        <AboutSection />
-        <HighlightsSection />
-        <RepertoireSection />
-        <ContactSection />
-      </main>
-    </div>
+    <>
+      <HeroSection />
+      <AboutSection />
+      <HighlightsSection />
+      <RepertoireSection />
+      <ContactSection />
+      <CtaSection />
+      <Footer />
+    </>
   );
 }

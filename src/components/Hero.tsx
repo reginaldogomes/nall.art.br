@@ -1,43 +1,65 @@
-import { Phone } from "lucide-react";
-import { Button } from "./ui/button";
+"use client";
+
+import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
+import { FaWhatsapp } from "react-icons/fa";
 import Logo from "./Logo";
 
-export const HeroSection = () => {
-  // Número de WhatsApp e mensagem pré-definida para o CTA
-  const whatsappNumber = "5531999999999"; // <-- SUBSTITUA PELO SEU NÚMERO
-  const whatsappMessage =
-    "Olá! Vi seu site e gostaria de saber mais sobre seus serviços de DJ para um evento.";
-  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
-    whatsappMessage
-  )}`;
+export function HeroSection() {
+  const WHATSAPP_LINK =
+    "https://wa.me/5531999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20serviços%20de%20DJ.";
 
   return (
-    <section
-      id="home"
-      className="flex flex-col items-center justify-center min-h-6 text-center p-4"
-    >
-      <div className="space-y-4">
-        <h1 className="text-6xl md:text-8xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-zinc-400 to-white">
-          <Logo />
-        </h1>
-        <p className="text-xl md:text-2xl text-zinc-300 tracking-wide">
-          Rock • Eletrônico • Brasilidades
-        </p>
-      </div>
-      <div className="mt-8">
-        <Button
-          asChild
-          size="lg"
-          className="bg-green-500 hover:bg-green-600 text-black font-bold text-lg rounded-full px-8 py-6 transition-transform transform hover:scale-105"
+    <section className="relative flex min-h-[350px] w-full items-center justify-center overflow-hidden p-6 border border-zinc-800 rounded-lg bg-zinc-900/30">
+      {/* Content */}
+      <div className="relative z-20 mx-4 px-4 text-center text-white sm:px-8">
+        <motion.h1
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-4xl font-bold uppercase tracking-wide"
         >
-          {/* O componente Link do Next.js foi substituído por uma tag <a> para evitar erros de compilação em ambientes sem Next.js */}
-          <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-            {/* Ícone corrigido */}
-            <Phone className="mr-3 h-6 w-6" />
-            Agende seu evento
-          </a>
-        </Button>
+          <Logo />
+        </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="mt-6 max-w-2xl mx-auto text-lg sm:text-xl md:text-2xl text-gray-200"
+        >
+          Som com <span className="font-bold text-cyan-400">identidade</span>{" "}
+          para o seu evento
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="mt-4 max-w-xl mx-auto text-base md:text-lg text-gray-300"
+        >
+          Rock • Eletrônico • Brasilidades com personalidade única. Atende em
+          todo o Brasil.
+        </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, delay: 0.6 }}
+          className="mt-8"
+        >
+          <Button
+            asChild
+            size="lg"
+            className="group bg-cyan-500 text-black hover:bg-cyan-400 transition-transform duration-300 hover:scale-105"
+          >
+            <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
+              <FaWhatsapp className="mr-2 h-6 w-6 transition-transform duration-300 group-hover:rotate-12" />
+              Chamar no WhatsApp
+            </a>
+          </Button>
+        </motion.div>
       </div>
     </section>
   );
-};
+}
