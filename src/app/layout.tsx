@@ -6,8 +6,17 @@ import { Main } from "@/components/Main";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "Nall | DJ - Beatmaker - Produtor Musical",
-  description: "Som com identidade para o seu evento",
+  title: "DJ NALL – Som com identidade para o seu evento",
+  description:
+    "Contrate DJ NALL para seu evento, festa, bar ou casamento. Especialista em Rock, Eletrônico e Brasilidades com uma identidade única. Atende em Belo Horizonte e todo o Brasil.",
+  keywords: [
+    "DJ para festas",
+    "DJ eventos Belo Horizonte",
+    "DJ Rock e Eletrônico",
+    "Contratar DJ",
+    "DJ para casamento",
+    "DJ para bar",
+  ],
 };
 
 export default function RootLayout({

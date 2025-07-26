@@ -26,7 +26,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="mt-6 max-w-2xl mx-auto text-lg sm:text-xl md:text-2xl text-gray-200"
+          className="mt-6 max-w-4xl mx-auto text-5xl sm:text-xl md:text-5xl text-gray-200"
         >
           Som com <span className="font-bold text-cyan-400">identidade</span>{" "}
           para o seu evento
@@ -38,8 +38,16 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="mt-4 max-w-xl mx-auto text-base md:text-lg text-gray-300"
         >
-          Rock • Eletrônico • Brasilidades com personalidade única. Atende em
-          todo o Brasil.
+          Rock • Eletrônico • Brasilidades
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="mt-4 max-w-xl mx-auto text-base md:text-lg text-gray-300"
+        >
+          Atende em Belo Horizonte e todo o Brasil.
         </motion.p>
 
         <motion.div
