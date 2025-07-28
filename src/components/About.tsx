@@ -5,9 +5,11 @@ const AboutSection = () => (
       <p className="text-lg md:text-xl text-zinc-300 leading-relaxed">
         Com uma identidade musical que transita com fluidez entre o rock
         alternativo, o eletrônico contemporâneo e as mais ricas brasilidades, DJ
-        Nall cria atmosferas únicas e envolventes. Com vasta experiência na
-        noite de Belo Horizonte, é especialista em transformar bares, lounges e
-        eventos em experiências sonoras inesquecíveis.
+        Nall cria atmosferas únicas e envolventes. Com ampla experiência na cena
+        noturna, já se apresentou em pubs, festas eletrônicas, eventos
+        corporativos e espaços como bares e lounges. Seu repertório refinado e
+        sensível à proposta de cada ocasião transforma qualquer evento em uma
+        experiência sonora inesquecível.
       </p>
     </div>
   </section>
