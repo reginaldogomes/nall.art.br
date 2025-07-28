@@ -2,7 +2,7 @@ import { Instagram, LinkIcon, Mail, Phone } from "lucide-react";
 import { Button } from "./ui/button";
 
 export const ContactSection = () => {
-  const whatsappNumber = "5531999999999"; // <-- SUBSTITUA PELO SEU NÚMERO
+  const whatsappNumber = "5531998811678"; // <-- SUBSTITUA PELO SEU NÚMERO
   const whatsappMessage = "Olá! Gostaria de fazer um orçamento para um evento.";
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
     whatsappMessage

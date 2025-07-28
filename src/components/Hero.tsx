@@ -7,7 +7,7 @@ import Logo from "./Logo";
 
 export function HeroSection() {
   const WHATSAPP_LINK =
-    "https://wa.me/5531999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20serviços%20de%20DJ.";
+    "https://wa.me/5531998811678?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20serviços%20de%20DJ.";
 
   return (
     <section className="relative flex min-h-[350px] w-full items-center justify-center overflow-hidden p-6 border border-zinc-800 rounded-lg bg-zinc-900/30">
