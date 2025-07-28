@@ -15,7 +15,7 @@ const ctaContent = {
     "Entre em contato, fale sobre sua ideia e vamos agendar uma data.",
   buttonText: "Agendar via WhatsApp",
   whatsappLink:
-    "https://wa.me/5531999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20serviços%20de%20DJ.",
+    "https://wa.me/5531998811678?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20serviços%20de%20DJ.",
 };
 
 export function CtaSection() {
