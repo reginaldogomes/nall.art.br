@@ -1,8 +1,7 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import WhatsAppButton from "@/components/WhatsAppButton"; // ajuste o caminho se necessário
 import { motion } from "framer-motion";
-import { MessageCircle } from "lucide-react";
 
 // Estrutura de dados para o conteúdo da seção
 const ctaContent = {
@@ -13,15 +12,14 @@ const ctaContent = {
   },
   subheadline:
     "Entre em contato, fale sobre sua ideia e vamos agendar uma data.",
-  buttonText: "Agendar via WhatsApp",
-  whatsappLink:
-    "https://wa.me/5531998811678?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20serviços%20de%20DJ.",
+
+  subheadline2: "Atende em Belo Horizonte e todo o Brasil",
 };
 
 export function CtaSection() {
   return (
     // Cores variadas para dar mais destaque à seção
-    <section className="w-full bg-card py-20 sm:py-28 border-t border-cyan-500/20">
+    <section className="w-full bg-card py-20 sm:py-28 border border-zinc-800 rounded-lg bg-zinc-900/30">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -39,21 +37,10 @@ export function CtaSection() {
         <p className="max-w-2xl text-lg text-muted-foreground">
           {ctaContent.subheadline}
         </p>
-        <Button
-          asChild
-          size="lg"
-          className="group mt-4 bg-cyan-500 text-gray-900 hover:bg-cyan-400 transition-transform duration-300 hover:scale-105"
-        >
-          <a
-            href={ctaContent.whatsappLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center"
-          >
-            <MessageCircle className="mr-3 h-7 w-7 transition-transform duration-300 group-hover:rotate-12" />
-            {ctaContent.buttonText}
-          </a>
-        </Button>
+        <p className="max-w-2xl text-lg text-muted-foreground pb-4">
+          {ctaContent.subheadline2}
+        </p>
+        <WhatsAppButton />
       </motion.div>
     </section>
   );

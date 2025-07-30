@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { GoogleTagManager } from "@/components/GoogleTagManager";
-import { Footer } from "@/components/Footer";
 import { Main } from "@/components/Main";
-import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "DJ NALL – Som com identidade para o seu evento",

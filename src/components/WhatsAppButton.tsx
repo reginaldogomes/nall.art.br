@@ -1,17 +1,10 @@
 import { FaWhatsapp } from "react-icons/fa";
-import { cn } from "@/lib/utils"; // Opcional: para mesclar classes, pode ser removido se não usado
 
-interface WhatsAppButtonProps {
-  phoneNumber: string;
-  message?: string;
-  className?: string;
-}
+const WhatsAppButton = () => {
+  // Dados agora fixos dentro do componente
+  const phoneNumber = "5531998811678";
+  const message = "Olá! Gostaria de agendar um horário.";
 
-const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({
-  phoneNumber,
-  message = "Olá! Gostaria de mais informações.",
-  className,
-}) => {
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
     message
   )}`;
@@ -21,8 +14,7 @@ const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({
       href={whatsappLink}
       target="_blank"
       rel="noopener noreferrer"
-      className={cn(
-        `
+      className={`
         group
         relative
         inline-flex
@@ -44,9 +36,7 @@ const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({
         focus:outline-none
         focus:ring-2
         focus:ring-green-400/50
-      `,
-        className
-      )}
+      `}
     >
       <div className="absolute inset-0 w-0 bg-white/20 transition-all duration-[350ms] ease-out group-hover:w-full"></div>
       <div className="relative flex items-center">
@@ -68,7 +58,7 @@ const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({
         >
           <FaWhatsapp className="h-5 w-5 text-[#128C7E]" />
         </div>
-        <span className="text-base">Chamar no WhatsApp</span>
+        <span className="text-base">Agendar pelo WhatsApp</span>
       </div>
     </a>
   );

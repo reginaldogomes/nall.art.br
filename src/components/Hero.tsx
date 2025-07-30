@@ -60,10 +60,7 @@ export function HeroSection() {
         </motion.p>
 
         <motion.div {...fadeIn(0.6)}>
-          <WhatsAppButton
-            phoneNumber={heroData.contact.phone}
-            message={heroData.contact.message}
-          />
+          <WhatsAppButton />
         </motion.div>
       </div>
     </section>
