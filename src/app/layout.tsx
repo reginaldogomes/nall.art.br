@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className="dark scroll-smooth {`${exo2.variable} ${orbitron.variable}`}"
+      className={`${orbitron.variable} ${exo2.variable} dark scroll-smooth`}
       suppressHydrationWarning
     >
       <body
