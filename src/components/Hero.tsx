@@ -7,7 +7,7 @@ import Logo from "./Logo";
 // Dados centralizados para facilitar a manutenção
 const heroData = {
   slogan: {
-    part1: "Som com",
+    part1: "DJ com",
     highlight: "identidade",
     part2: "para o seu evento",
   },
@@ -35,7 +35,7 @@ export function HeroSection() {
 
         <motion.h2
           {...fadeIn(0.2)}
-          className="max-w-3xl text-4xl font-medium tracking-tight text-gray-200 md:text-5xl"
+          className="max-w-3xl text-4xl font-heading font-medium tracking-tight text-gray-200 md:text-5xl"
         >
           {heroData.slogan.part1}{" "}
           <span className="font-bold text-cyan-400">

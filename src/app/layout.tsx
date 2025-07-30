@@ -34,7 +34,7 @@ export default function RootLayout({
              bg-fixed bg-cover bg-center bg-no-repeat
              bg-[url('/bg.webp')]
              before:content-[''] before:absolute before:inset-0 
-             before:-z-10 before:bg-black/85 antialiased"
+             before:-z-10 before:bg-black/85 antialiased text-body"
       >
         <noscript>
           <iframe
