@@ -10,14 +10,14 @@ const aboutData = {
   },
   description: [
     "DJ Nall é um artista versátil focado em música eletrônica, com destaque para as vertentes House e Techno. Com uma identidade sonora marcante, ele se especializa em criar experiências únicas e imersivas.",
-    "Seus sets energéticos são a alma de festas eletrônicas, eventos corporativos, lounges e pubs. Ele adapta seu som para cada ambiente, garantindo sempre a atmosfera perfeita.",
+    "Seus sets enérgicos, com linhas melódicas e progressivas, são a alma de festas eletrônicas, eventos corporativos, lounges e pubs. DJ Nall adapta seu som a cada ambiente, criando atmosferas imersivas com identidade e sensibilidade únicas, sempre em sintonia com o público e o clima do evento.",
     "Em ocasiões especiais, Nall expande seu repertório com performances que incluem influências de rock alternativo e metal, além de brasilidades em eventos mais intimistas e descontraídos.",
   ],
 };
 
 const AboutSection = () => {
   return (
-    <section id="sobre" className="py-20 md:py-32 bg-zinc-900/50">
+    <section id="sobre" className="py-20 md:py-32 bg-background/50">
       <div className="container mx-auto max-w-5xl px-4">
         {/* 3. Layout em grid para responsividade (coluna única no mobile, duas no desktop) */}
         <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-3">

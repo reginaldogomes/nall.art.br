@@ -12,7 +12,6 @@ const heroData = {
     part2: "para o seu evento",
   },
   genres: "Rock • Eletrônico • Brasilidades",
-  location: "Atende em Belo Horizonte e todo o Brasil",
   contact: {
     phone: "5531998811678",
     message: "Olá! Gostaria de saber mais sobre seus serviços de DJ.",
@@ -50,13 +49,6 @@ export function HeroSection() {
           className="text-base text-gray-300 md:text-lg"
         >
           {heroData.genres}
-        </motion.p>
-
-        <motion.p
-          {...fadeIn(0.5)}
-          className="text-base text-gray-400 md:text-lg"
-        >
-          {heroData.location}
         </motion.p>
 
         <motion.div {...fadeIn(0.6)}>

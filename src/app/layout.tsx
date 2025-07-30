@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { GoogleTagManager } from "@/components/GoogleTagManager";
 import { Main } from "@/components/Main";
+import { orbitron, exo2 } from "@/fonts"; // ajuste o caminho se necessário
 
 export const metadata: Metadata = {
   title: "DJ NALL – Som com identidade para o seu evento",
   description:
-    "Contrate DJ NALL para seu evento, festa, bar ou casamento. Especialista em Rock, Eletrônico e Brasilidades com uma identidade única. Atende em Belo Horizonte e todo o Brasil.",
+    "Contrate DJ NALL para seu evento, festa, bar. Especialista em Rock, Eletrônico e Brasilidades com uma identidade única. Atende em Belo Horizonte e todo o Brasil.",
   keywords: [
     "DJ para festas",
     "DJ eventos Belo Horizonte",
