@@ -24,7 +24,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className="dark scroll-smooth">
+    <html
+      lang="pt-BR"
+      className="dark scroll-smooth {`${exo2.variable} ${orbitron.variable}`}"
+      suppressHydrationWarning
+    >
       <body
         className="relative min-h-screen 
              bg-fixed bg-cover bg-center bg-no-repeat

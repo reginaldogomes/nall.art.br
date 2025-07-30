@@ -1,5 +1,5 @@
 import AboutSection from "@/components/About";
-import { ContactSection } from "@/components/ContactSection";
+import { SocialsSection } from "@/components/SocialsSection";
 import { CtaSection } from "@/components/CtaSection";
 import { Footer } from "@/components/Footer";
 import { HeroSection } from "@/components/Hero";
@@ -12,7 +12,7 @@ export default function Home() {
       <AboutSection />
       <RepertoireSection />
       <CtaSection />
-      <ContactSection />
+      <SocialsSection />
       <Footer />
     </>
   );

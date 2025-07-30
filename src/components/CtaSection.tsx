@@ -19,7 +19,7 @@ const ctaContent = {
 export function CtaSection() {
   return (
     // Cores variadas para dar mais destaque à seção
-    <section className="w-full py-20 sm:py-28 border border-zinc-800 rounded-lg bg-zinc-900/30">
+    <section className="w-full py-20 sm:py-28 bg-background/50">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}

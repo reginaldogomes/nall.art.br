@@ -2,9 +2,9 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 // 1. Dados centralizados em um objeto para fácil manutenção
 const aboutData = {
-  title: "Sobre o DJ",
+  title: "Sobre o DJ Nall",
   avatar: {
-    src: "https://github.com/reginaldogomes.png", // Substitua pela URL da sua imagem
+    src: "/nall.png", // Substitua pela URL da sua imagem
     alt: "Foto de perfil do DJ Nall",
     fallback: "DN",
   },

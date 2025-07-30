@@ -27,7 +27,7 @@ const fadeIn = (delay: number) => ({
 
 export function HeroSection() {
   return (
-    <section className="relative flex min-h-[450px] w-full items-center justify-center overflow-hidden rounded-lg border border-zinc-800 bg-zinc-900/30 p-4">
+    <section className="relative flex w-full items-center justify-center overflow-hidden bg-background/50 py-24">
       <div className="z-10 flex flex-col items-center gap-6 text-center text-white">
         <motion.div {...fadeIn(0)}>
           <Logo />
