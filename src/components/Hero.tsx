@@ -1,71 +1,69 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import WhatsAppButton from "@/components/WhatsAppButton"; // ajuste o caminho se necessário
 import { motion } from "framer-motion";
-import { FaWhatsapp } from "react-icons/fa";
 import Logo from "./Logo";
 
+// Dados centralizados para facilitar a manutenção
+const heroData = {
+  slogan: {
+    part1: "Som com",
+    highlight: "identidade",
+    part2: "para o seu evento",
+  },
+  genres: "Rock • Eletrônico • Brasilidades",
+  location: "Atende em Belo Horizonte e todo o Brasil",
+  contact: {
+    phone: "5531998811678",
+    message: "Olá! Gostaria de saber mais sobre seus serviços de DJ.",
+  },
+};
+
+// Variantes de animação para simplificar o código
+const fadeIn = (delay: number) => ({
+  initial: { opacity: 0, y: 20 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.8, delay },
+});
+
 export function HeroSection() {
-  const WHATSAPP_LINK =
-    "https://wa.me/5531998811678?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20serviços%20de%20DJ.";
-
   return (
-    <section className="relative flex min-h-[350px] w-full items-center justify-center overflow-hidden p-6 border border-zinc-800 rounded-lg bg-zinc-900/30">
-      {/* Content */}
-      <div className="relative z-20 mx-4 px-4 text-center text-white sm:px-8">
-        <motion.h1
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-4xl font-bold uppercase tracking-wide"
-        >
+    <section className="relative flex min-h-[450px] w-full items-center justify-center overflow-hidden rounded-lg border border-zinc-800 bg-zinc-900/30 p-4">
+      <div className="z-10 flex flex-col items-center gap-6 text-center text-white">
+        <motion.div {...fadeIn(0)}>
           <Logo />
-        </motion.h1>
+        </motion.div>
+
+        <motion.h2
+          {...fadeIn(0.2)}
+          className="max-w-3xl text-4xl font-medium tracking-tight text-gray-200 md:text-5xl"
+        >
+          {heroData.slogan.part1}{" "}
+          <span className="font-bold text-cyan-400">
+            {heroData.slogan.highlight}
+          </span>{" "}
+          {heroData.slogan.part2}
+        </motion.h2>
 
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="mt-6 max-w-4xl mx-auto text-5xl sm:text-xl md:text-5xl text-gray-200"
+          {...fadeIn(0.4)}
+          className="text-base text-gray-300 md:text-lg"
         >
-          Som com <span className="font-bold text-cyan-400">identidade</span>{" "}
-          para o seu evento
+          {heroData.genres}
         </motion.p>
 
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="mt-4 max-w-xl mx-auto text-base md:text-lg text-gray-300"
+          {...fadeIn(0.5)}
+          className="text-base text-gray-400 md:text-lg"
         >
-          Rock • Eletrônico • Brasilidades
+          {heroData.location}
         </motion.p>
 
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="mt-4 max-w-xl mx-auto text-base md:text-lg text-gray-300"
-        >
-          Atende em Belo Horizonte e todo o Brasil.
-        </motion.p>
-
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, delay: 0.6 }}
-          className="mt-8"
-        >
-          <Button
-            asChild
-            size="lg"
-            className="group bg-cyan-500 text-black hover:bg-cyan-400 transition-transform duration-300 hover:scale-105"
-          >
-            <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
-              <FaWhatsapp className="mr-2 h-6 w-6 transition-transform duration-300 group-hover:rotate-12" />
-              Chamar no WhatsApp
-            </a>
-          </Button>
+        <motion.div {...fadeIn(0.6)}>
+          <WhatsAppButton
+            phoneNumber={heroData.contact.phone}
+            message={heroData.contact.message}
+          />
         </motion.div>
       </div>
     </section>
