@@ -3,7 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 const WhatsAppButton = () => {
   // Dados agora fixos dentro do componente
   const phoneNumber = "5531998811678";
-  const message = "Olá! Gostaria de agendar um horário.";
+  const message = "Olá! Gostaria de fazer um orçamento para um evento.";
 
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
     message

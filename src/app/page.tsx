@@ -13,8 +13,8 @@ export default function Home() {
       <AboutSection />
       <HighlightsSection />
       <RepertoireSection />
-      <ContactSection />
       <CtaSection />
+      <ContactSection />
       <Footer />
     </>
   );
