@@ -16,7 +16,7 @@ const socialsData = [
   },
   {
     name: "SoundCloud",
-    href: "https://soundcloud.com/nall.dj", // Substitua pelo seu link
+    href: "https://soundcloud.com/kosmophonic", // Substitua pelo seu link
     icon: SiSoundcloud,
     hoverColor: "hover:text-[#FF5500]", // Cor do SoundCloud
   },
