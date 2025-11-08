@@ -13,7 +13,7 @@ const ctaContent = {
   subheadline:
     "Entre em contato, fale sobre sua ideia e vamos agendar uma data.",
 
-  subheadline2: "Atende em Belo Horizonte e todo o Brasil",
+  subheadline2: "Atende em Pirapora e região",
 };
 
 export function CtaSection() {

@@ -26,7 +26,7 @@ export const SocialsSection = () => {
   return (
     <footer id="redes" className="py-20 text-center bg-background/50">
       <div className="container mx-auto max-w-3xl px-4">
-        <h2 className="mb-8 text-3xl font-bold md:text-4xl">Siga nas Redes</h2>
+        <h2 className="mb-8 text-3xl font-bold md:text-4xl">Siga o DJ Nall em Pirapora nas Redes</h2>
         <div className="flex justify-center gap-6 md:gap-8">
           {/* 2. Mapeamento dos ícones a partir do objeto de dados */}
           {socialsData.map((social) => (

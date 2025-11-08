@@ -2,16 +2,16 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 // 1. Dados centralizados em um objeto para fácil manutenção
 const aboutData = {
-  title: "Sobre o DJ Nall",
+  title: "DJ em Pirapora: Rock, Eletrônico e Brasilidades",
   avatar: {
     src: "/nall.png", // Substitua pela URL da sua imagem
     alt: "Foto de perfil do DJ Nall",
     fallback: "DN",
   },
   description: [
-    "DJ Nall é um artista versátil focado em música eletrônica, com destaque para as vertentes House e Techno. Com uma identidade sonora marcante, ele se especializa em criar experiências únicas e imersivas.",
-    "Seus sets enérgicos, com linhas melódicas e progressivas, são a alma de festas eletrônicas, eventos corporativos, lounges e pubs. DJ Nall adapta seu som a cada ambiente, criando atmosferas imersivas com identidade e sensibilidade únicas, sempre em sintonia com o público e o clima do evento.",
-    "Em ocasiões especiais, Nall expande seu repertório com performances que incluem influências de rock alternativo e metal, além de brasilidades em eventos mais intimistas e descontraídos.",
+    "DJ Nall é um artista versátil com foco em música eletrônica, especialmente House e Techno, agora com base em Pirapora. Com uma identidade sonora marcante, ele se especializa em criar experiências únicas e imersivas.",
+    "Seus sets enérgicos, com linhas melódicas e progressivas, são a alma de festas eletrônicas, eventos corporativos, lounges e pubs em Pirapora e região. DJ Nall adapta seu som a cada ambiente, criando atmosferas imersivas com identidade e sensibilidade únicas, sempre em sintonia com o público e o clima do evento.",
+    "Para eventos em Pirapora que pedem algo diferente, Nall expande seu repertório com o melhor do rock alternativo e metal, além de brasilidades para momentos mais descontraídos.",
   ],
 };
 

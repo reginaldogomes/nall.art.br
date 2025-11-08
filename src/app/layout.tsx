@@ -5,16 +5,18 @@ import { Main } from "@/components/Main";
 import { orbitron, exo2 } from "@/fonts"; // ajuste o caminho se necessário
 
 export const metadata: Metadata = {
-  title: "DJ NALL – Som com identidade para o seu evento",
+  title: "DJ em Pirapora e Região – NALL | Rock, Eletrônico e Brasilidades",
   description:
-    "Contrate DJ NALL para seu evento, festa, bar. Especialista em Rock, Eletrônico e Brasilidades com uma identidade única. Atende em Belo Horizonte e todo o Brasil.",
+    "Procurando DJ em Pirapora? NALL é especialista em Rock, Eletrônico e Brasilidades, criando a atmosfera perfeita para seu evento, festa ou bar. Som com identidade e versatilidade.",
   keywords: [
-    "DJ para festas",
-    "DJ eventos Belo Horizonte",
-    "DJ Rock e Eletrônico",
-    "Contratar DJ",
-    "DJ para casamento",
-    "DJ para bar",
+    "DJ em Pirapora",
+    "DJ para festas em Pirapora",
+    "DJ eventos Pirapora",
+    "DJ Rock e Eletrônico em Pirapora",
+    "Contratar DJ em Pirapora",
+    "DJ para casamento em Pirapora",
+    "DJ para bar em Pirapora",
+    "DJ Brasilidades",
   ],
 };
 

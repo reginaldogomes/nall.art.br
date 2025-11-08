@@ -7,11 +7,11 @@ import Logo from "./Logo";
 // Dados centralizados para facilitar a manutenção
 const heroData = {
   slogan: {
-    part1: "DJ com",
-    highlight: "identidade",
-    part2: "para o seu evento",
+    part1: "DJ em",
+    highlight: "Pirapora",
+    part2: "com identidade para o seu evento",
   },
-  genres: "Rock • Eletrônico • Brasilidades",
+  genres: "Rock • Eletrônico • Brasilidades em Pirapora",
   contact: {
     phone: "5531998811678",
     message: "Olá! Gostaria de saber mais sobre seus serviços de DJ.",
