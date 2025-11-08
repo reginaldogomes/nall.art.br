@@ -4,6 +4,7 @@ import { CtaSection } from "@/components/CtaSection";
 import { Footer } from "@/components/Footer";
 import { HeroSection } from "@/components/Hero";
 import RepertoireSection from "@/components/RepertoireSection";
+import { KeywordsSection } from "@/components/KeywordsSection";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <RepertoireSection />
       <CtaSection />
       <SocialsSection />
+      <KeywordsSection />
       <Footer />
     </>
   );
