@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { GoogleTagManager } from "@/components/GoogleTagManager";
 import { Main } from "@/components/Main";
+import { Navbar } from "@/components/Navbar";
 import { orbitron, exo2 } from "@/fonts"; // ajuste o caminho se necessário
 
 export const metadata: Metadata = {
@@ -47,6 +48,7 @@ export default function RootLayout({
           />
         </noscript>
         <GoogleTagManager gtmId="GTM-M2WT384Z" />
+        <Navbar />
         <Main>{children}</Main>
       </body>
     </html>
