@@ -24,7 +24,7 @@ const WhatsAppButton = () => {
         overflow-hidden
         rounded-full
         bg-gradient-to-r from-[#25D366] to-[#128C7E]
-        px-6
+        px-4 md:px-6
         font-semibold
         text-white
         shadow-md
@@ -42,7 +42,7 @@ const WhatsAppButton = () => {
       <div className="relative flex items-center">
         <div
           className="
-            mr-4
+            mr-2 md:mr-4
             flex
             h-8
             w-8
@@ -58,7 +58,7 @@ const WhatsAppButton = () => {
         >
           <FaWhatsapp className="h-5 w-5 text-[#128C7E]" />
         </div>
-        <span className="text-base">Agendar pelo WhatsApp</span>
+        <span className="text-sm md:text-base">Agendar pelo WhatsApp</span>
       </div>
     </a>
   );

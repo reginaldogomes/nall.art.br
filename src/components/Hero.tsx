@@ -27,22 +27,22 @@ const fadeIn = (delay: number) => ({
 
 export function HeroSection() {
   return (
-    <section className="relative flex w-full items-center justify-center overflow-hidden bg-background/50 py-24">
+    <section className="relative flex w-full items-center justify-center overflow-hidden bg-background/50 py-16 sm:py-20 md:py-24 mt-8 sm:mt-10 md:mt-12">
       <div className="z-10 flex flex-col items-center gap-6 text-center text-white">
         <motion.div {...fadeIn(0)}>
           <Logo />
         </motion.div>
 
-        <motion.h2
+        <motion.h1
           {...fadeIn(0.2)}
-          className="max-w-3xl text-4xl font-heading font-medium tracking-tight text-gray-200 md:text-5xl"
+          className="max-w-3xl text-3xl sm:text-4xl font-heading font-medium tracking-tight text-gray-200 md:text-5xl"
         >
           {heroData.slogan.part1}{" "}
           <span className="font-bold text-cyan-400">
             {heroData.slogan.highlight}
           </span>{" "}
           {heroData.slogan.part2}
-        </motion.h2>
+        </motion.h1>
 
         <motion.p
           {...fadeIn(0.4)}

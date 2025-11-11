@@ -71,7 +71,6 @@ export default function ServicosPage() {
           ))}
         </div>
       </div>
-      <Footer />
     </>
   );
 }

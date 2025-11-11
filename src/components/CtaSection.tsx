@@ -34,10 +34,10 @@ export function CtaSection() {
           {ctaContent.headline.part2}
         </h2>
         {/* Cor semântica para o subtítulo */}
-        <p className="max-w-2xl text-lg text-muted-foreground">
+        <p className="max-w-2xl text-base text-muted-foreground sm:text-lg">
           {ctaContent.subheadline}
         </p>
-        <p className="max-w-2xl text-lg text-muted-foreground pb-4">
+        <p className="max-w-2xl text-base text-muted-foreground pb-4 sm:text-lg">
           {ctaContent.subheadline2}
         </p>
         <WhatsAppButton />

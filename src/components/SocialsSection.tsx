@@ -38,14 +38,14 @@ export const SocialsSection = () => {
               aria-label={`Link para o ${social.name}`}
               // 3. EFEITOS E DESTAQUES: Efeitos de hover com cor, sombra e animação.
               className={`
-                flex h-16 w-16 items-center justify-center rounded-full
+                flex h-14 w-14 md:h-16 md:w-16 items-center justify-center rounded-full
                 bg-zinc-800/60 text-zinc-400 shadow-lg
                 transition-all duration-300 ease-in-out
                 hover:-translate-y-2 hover:scale-110 hover:shadow-xl hover:shadow-current
                 ${social.hoverColor}
               `}
             >
-              <social.icon className="h-8 w-8" />
+              <social.icon className="h-7 w-7 md:h-8 md:w-8" />
             </a>
           ))}
         </div>

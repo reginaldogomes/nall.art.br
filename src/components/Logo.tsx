@@ -19,7 +19,7 @@ const Logo = ({
       width={300}
       height={300}
       className={cn(
-        "m-0 p-0 block object-contain",
+        "m-0 p-0 block object-contain w-48 h-48 md:w-72 md:h-72",
         aspectRatio && `aspect-[${aspectRatio}]`,
         className
       )}

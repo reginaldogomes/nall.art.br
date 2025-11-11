@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { localBusinessSchema } from "@/lib/schema";
 import { GoogleTagManager } from "@/components/GoogleTagManager";
 import { Main } from "@/components/Main";
 import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 import { orbitron, exo2 } from "@/fonts"; // ajuste o caminho se necessário
 
 export const metadata: Metadata = {
@@ -32,6 +34,12 @@ export default function RootLayout({
       className={`${orbitron.variable} ${exo2.variable} dark scroll-smooth`}
       suppressHydrationWarning
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
+      </head>
       <body
         className="relative min-h-screen 
              bg-fixed bg-cover bg-center bg-no-repeat
@@ -48,8 +56,11 @@ export default function RootLayout({
           />
         </noscript>
         <GoogleTagManager gtmId="GTM-M2WT384Z" />
-        <Navbar />
-        <Main>{children}</Main>
+        <div className="flex flex-col min-h-screen">
+          <Navbar />
+          <Main className="flex-grow">{children}</Main>
+          <Footer />
+        </div>
       </body>
     </html>
   );
