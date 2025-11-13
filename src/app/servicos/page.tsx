@@ -1,4 +1,5 @@
 import { Footer } from "@/components/Footer";
+import { HomeStudioSection } from "@/components/HomeStudioSection";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle } from "lucide-react";
 
@@ -47,7 +48,10 @@ export default function ServicosPage() {
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service) => (
-            <Card key={service.title} className="bg-zinc-900/30 border-zinc-800">
+            <Card
+              key={service.title}
+              className="bg-zinc-900/30 border-zinc-800"
+            >
               <CardHeader>
                 <CardTitle className="text-2xl font-semibold text-cyan-400">
                   {service.title}
@@ -71,6 +75,7 @@ export default function ServicosPage() {
           ))}
         </div>
       </div>
+      <HomeStudioSection />
     </>
   );
 }

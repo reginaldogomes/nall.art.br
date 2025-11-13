@@ -38,6 +38,6 @@ export const localBusinessSchema: WithContext<LocalBusiness> = {
     },
   ],
   sameAs: [
-    'https://www.instagram.com/nall.art.br/',
+    'https://www.instagram.com/nall.dj/',
   ],
 };
