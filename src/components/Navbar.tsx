@@ -10,6 +10,8 @@ const navLinks = [
   { href: "/", label: "Home" },
   { href: "/servicos", label: "Serviços" },
   { href: "/artigos", label: "Artigos" },
+  { href: "/artigos", label: "Trabalhos" },
+
 ];
 
 export function Navbar() {
