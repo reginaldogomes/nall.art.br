@@ -9,9 +9,8 @@ import { Menu, X } from "lucide-react";
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/servicos", label: "Serviços" },
+  { href: "/portfolio", label: "Trabalhos" },
   { href: "/artigos", label: "Artigos" },
-  { href: "/artigos", label: "Trabalhos" },
-
 ];
 
 export function Navbar() {
@@ -19,8 +18,8 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="py-2 bg-background/70 sticky top-0 z-50 backdrop-blur-sm">
-      <div className="container mx-auto flex justify-center items-center">
+    <header className="border-b border-zinc-800 bg-zinc-950/90 sticky top-0 z-50 backdrop-blur-sm">
+      <div className="container mx-auto flex justify-center items-center p-4">
         {/* Mobile Menu Button */}
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)} className="text-white">
@@ -29,7 +28,7 @@ export function Navbar() {
         </div>
 
         {/* Desktop Menu */}
-        <nav className="hidden md:flex gap-8">
+        <nav className="hidden md:flex gap-2">
           {navLinks.map((link) => {
             const isActive = pathname === link.href;
             return (
@@ -37,8 +36,8 @@ export function Navbar() {
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  "text-lg font-medium text-zinc-300 transition-colors hover:text-cyan-400",
-                  isActive && "text-cyan-400"
+                  "px-4 py-2 text-lg font-medium text-zinc-300 transition-colors hover:text-cyan-400 rounded-md",
+                  isActive && "bg-cyan-400/10 text-cyan-400"
                 )}
               >
                 {link.label}
@@ -60,8 +59,8 @@ export function Navbar() {
                   href={link.href}
                   onClick={() => setIsOpen(false)}
                   className={cn(
-                    "text-lg font-medium text-zinc-300 transition-colors hover:text-cyan-400",
-                    isActive && "text-cyan-400"
+                    "px-4 py-2 text-lg font-medium text-zinc-300 transition-colors hover:text-cyan-400 rounded-md",
+                    isActive && "bg-cyan-400/10 text-cyan-400"
                   )}
                 >
                   {link.label}
