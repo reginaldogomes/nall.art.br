@@ -12,7 +12,7 @@ const aboutData = {
     fallback: "DN",
   },
   description: [
-    "DJ Nall é um artista versátil da música eletrônica, com foco em House e Techno, atualmente baseado em Pirapora – MG. Com uma identidade sonora marcante, ele se especializa em criar experiências únicas e imersivas, explorando texturas melódicas e atmosferas profundas.",
+    "DJ Nall é um artista versátil da música eletrônica, com foco em House, Techno e Trance, atualmente baseado em Pirapora – MG. Com uma identidade sonora marcante, ele se especializa em criar experiências únicas e imersivas, explorando texturas melódicas e atmosferas profundas.",
     "Formado em Produção Musical pela AIMEC (Academia Internacional de Música Eletrônica) em Curitiba/PR, Nall combina técnica, sensibilidade e criatividade para construir narrativas musicais envolventes.",
     "Seus sets enérgicos, repletos de linhas melódicas e progressivas, são a alma de festas eletrônicas, eventos corporativos, lounges e pubs em Pirapora e região. Sempre atento ao público e ao clima do evento, adapta seu repertório para entregar a energia certa no momento certo.",
     "Para ocasiões que pedem diversidade, o artista também explora com fluidez o rock alternativo, metal e brasilidades, criando transições inteligentes e mantendo uma estética sonora única. O resultado é uma performance autêntica, cheia de personalidade, capaz de transformar qualquer ambiente.",

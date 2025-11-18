@@ -6,6 +6,12 @@ export interface PortfolioItem {
 }
 
 export const portfolioData: PortfolioItem[] = [
+    {
+    title: "Nall — Em Pirapora (feat. Daniel Jr)",
+    description: "Faixa com atmosfera emotiva e regional, unindo elementos melódicos e vocais marcantes em uma narrativa musical envolvente.",
+    soundcloudUrl: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/nallmusic/em-pirapora-feat-daniel-jr&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    type: "Musica"
+  },
   {
     title: "NALL — Crowley Reimagined (Original Mix)",
     description: "Uma releitura atmosférica e envolvente com texturas eletrônicas e uma construção melódica profunda, assinada por Nall.",
