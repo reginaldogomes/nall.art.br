@@ -7,7 +7,7 @@ import { Mail } from "lucide-react";
 
 // Dados centralizados para facilitar a manutenção
 const heroData = {
-  title: "NALL – Produtor Musical & DJ",
+  title: "Produtor Musical & DJ",
   subtitle: "Produção Musical • Mixagem • Masterização • Composição",
   slogan: {
     part1: "Melodias profundas em uma",

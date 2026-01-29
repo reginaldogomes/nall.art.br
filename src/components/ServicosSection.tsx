@@ -10,7 +10,6 @@ const servicosData = {
     {
       icon: Headphones,
       title: "Produção Musical",
-      emoji: "🎧",
       description:
         "Criação de faixas originais do zero, com identidade sonora única. Desenvolvimento completo de produções em Melodic Techno, Progressive House e estilos relacionados.",
       color: "cyan",
@@ -18,7 +17,6 @@ const servicosData = {
     {
       icon: Volume2,
       title: "Mixagem & Masterização",
-      emoji: "🔊",
       description:
         "Tratamento profissional de áudio para garantir qualidade competitiva em streaming. Mixagem balanceada e masterização com loudness adequado para todas as plataformas.",
       color: "purple",
@@ -26,7 +24,6 @@ const servicosData = {
     {
       icon: PenTool,
       title: "Composição & Arranjos",
-      emoji: "✍️",
       description:
         "Desenvolvimento de melodias, harmonias e estruturas musicais. Criação de arranjos criativos para artistas solo, bandas e projetos audiovisuais.",
       color: "pink",
@@ -34,7 +31,6 @@ const servicosData = {
     {
       icon: Users,
       title: "Colaborações Artísticas",
-      emoji: "🤝",
       description:
         "Parcerias criativas com outros artistas e produtores. Remixes, features vocais e projetos colaborativos com visão artística compartilhada.",
       color: "orange",
@@ -108,12 +104,11 @@ export function ServicosSection() {
                   hover:shadow-lg ${colors.shadow} hover:-translate-y-1
                 `}
               >
-                {/* Ícone e Emoji */}
+                {/* Ícone */}
                 <div className="flex items-center gap-4 mb-5">
                   <div className={`w-14 h-14 flex items-center justify-center rounded-xl ${colors.bg}`}>
                     <service.icon className={`w-7 h-7 ${colors.text}`} />
                   </div>
-                  <span className="text-3xl">{service.emoji}</span>
                 </div>
 
                 {/* Título */}

@@ -10,7 +10,6 @@ const navLinks = [
   { href: "/", label: "Home" },
   { href: "/servicos", label: "Serviços" },
   { href: "/portfolio", label: "Trabalhos" },
-  { href: "/artigos", label: "Artigos" },
 ];
 
 const contactEmail = "contato@nall.art.br";
@@ -21,19 +20,6 @@ export function Navbar() {
 
   return (
     <header className="border-b border-zinc-800 bg-zinc-950/90 sticky top-0 z-50 backdrop-blur-sm">
-      {/* Barra superior com e-mail */}
-      <div className="hidden md:block bg-zinc-900/80 border-b border-zinc-800">
-        <div className="container mx-auto flex justify-end items-center px-4 py-2">
-          <a
-            href={`mailto:${contactEmail}`}
-            className="flex items-center gap-2 text-sm text-zinc-400 hover:text-cyan-400 transition-colors"
-          >
-            <Mail className="h-4 w-4" />
-            {contactEmail}
-          </a>
-        </div>
-      </div>
-      
       <div className="container mx-auto flex justify-center items-center p-4">
         {/* Mobile Menu Button */}
         <div className="md:hidden">

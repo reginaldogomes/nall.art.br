@@ -1,26 +1,5 @@
-import { Mail, Instagram, Music } from "lucide-react";
-import { SiSoundcloud, SiTiktok } from "react-icons/si";
-
-const footerData = {
-  email: "contato@nall.art.br",
-  socials: [
-    {
-      name: "Instagram",
-      href: "https://instagram.com/nall.dj",
-      icon: Instagram,
-    },
-    {
-      name: "TikTok",
-      href: "https://tiktok.com/nall.dj",
-      icon: SiTiktok,
-    },
-    {
-      name: "SoundCloud",
-      href: "https://soundcloud.com/kosmophonic",
-      icon: SiSoundcloud,
-    },
-  ],
-};
+import { Mail, Music } from "lucide-react";
+import { contactData } from "@/data/contactData";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -36,7 +15,7 @@ export function Footer() {
               NALL
             </h3>
             <p className="text-sm text-zinc-400">
-              Produtor Musical & DJ especializado em Melodic Techno e Progressive House.
+              Produtor Musical especializado em Melodic Techno e Progressive House.
             </p>
           </div>
 
@@ -44,11 +23,11 @@ export function Footer() {
           <div className="text-center">
             <h3 className="text-lg font-semibold text-white mb-3">Contato</h3>
             <a
-              href={`mailto:${footerData.email}`}
+              href={`mailto:${contactData.email}`}
               className="inline-flex items-center gap-2 text-zinc-400 hover:text-cyan-400 transition-colors"
             >
               <Mail className="h-4 w-4" />
-              {footerData.email}
+              {contactData.email}
             </a>
             <p className="mt-2 text-sm text-zinc-500">
               Produção Musical • Mixagem • Masterização
@@ -59,7 +38,7 @@ export function Footer() {
           <div className="text-center md:text-right">
             <h3 className="text-lg font-semibold text-white mb-3">Redes Sociais</h3>
             <div className="flex justify-center md:justify-end gap-4">
-              {footerData.socials.map((social) => (
+              {contactData.socials.map((social) => (
                 <a
                   key={social.name}
                   href={social.href}
@@ -78,7 +57,7 @@ export function Footer() {
         {/* Divisória e Copyright */}
         <div className="border-t border-zinc-800 pt-6">
           <p className="text-center text-sm text-muted-foreground">
-            © {currentYear} <span className="font-semibold text-cyan-400">NALL</span> – Produtor Musical & DJ. Todos os direitos reservados.
+            © {currentYear} <span className="font-semibold text-cyan-400">NALL</span> – Produtor Musical. Todos os direitos reservados.
           </p>
         </div>
       </div>
