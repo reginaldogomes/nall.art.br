@@ -5,17 +5,17 @@ import { motion } from "framer-motion";
 
 // 1. Dados centralizados em um objeto para fácil manutenção
 const aboutData = {
-  title: "DJ em Pirapora: Rock, Eletrônico e Brasilidades",
+  title: "NALL: Produtor Musical & DJ",
   avatar: {
     src: "/nall.png", // Substitua pela URL da sua imagem
-    alt: "Foto de perfil do DJ Nall",
-    fallback: "DN",
+    alt: "Foto de perfil do NALL - Produtor Musical",
+    fallback: "NL",
   },
   description: [
-    "DJ Nall é um artista versátil da música eletrônica, com foco em House, Techno e Trance, atualmente baseado em Pirapora – MG. Com uma identidade sonora marcante, ele se especializa em criar experiências únicas e imersivas, explorando texturas melódicas e atmosferas profundas.",
-    "Formado em Produção Musical pela AIMEC (Academia Internacional de Música Eletrônica) em Curitiba/PR, Nall combina técnica, sensibilidade e criatividade para construir narrativas musicais envolventes.",
-    "Seus sets enérgicos, repletos de linhas melódicas e progressivas, são a alma de festas eletrônicas, eventos corporativos, lounges e pubs em Pirapora e região. Sempre atento ao público e ao clima do evento, adapta seu repertório para entregar a energia certa no momento certo.",
-    "Para ocasiões que pedem diversidade, o artista também explora com fluidez o rock alternativo, metal e brasilidades, criando transições inteligentes e mantendo uma estética sonora única. O resultado é uma performance autêntica, cheia de personalidade, capaz de transformar qualquer ambiente.",
+    "NALL é um produtor musical e DJ focado em Melodic Techno e Progressive House, onde melodias profundas e melancólicas se fundem em uma atmosfera dark e emocional. Com experiência tanto em estúdio quanto em performances ao vivo, oferece produção musical profissional com identidade sonora única.",
+    "Especializado em produção completa de faixas, mixagem, masterização e composição, NALL une técnica apurada com sensibilidade artística. Cada projeto é desenvolvido com atenção aos detalhes, garantindo qualidade profissional para lançamentos em todas as plataformas.",
+    "Mais do que entretenimento, NALL usa a música como forma de protesto e expressão. Suas produções dão voz a causas urgentes, denunciando injustiças sociais e transformando indignação em arte sonora que toca a alma.",
+    "Disponível para produção musical, colaborações artísticas e bookings. Entre em contato para transformar sua ideia em música.",
   ],
 };
 

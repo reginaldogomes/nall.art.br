@@ -1,43 +1,27 @@
 
-import { WithContext, LocalBusiness } from 'schema-dts';
+import { WithContext, Person } from 'schema-dts';
 
-export const localBusinessSchema: WithContext<LocalBusiness> = {
+export const personSchema: WithContext<Person> = {
   '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
+  '@type': 'Person',
   name: 'NALL',
-  address: {
-    '@type': 'PostalAddress',
-    addressLocality: 'Pirapora',
-    addressRegion: 'MG',
-    addressCountry: 'BR',
-  },
-  telephone: '+5531998811678',
-  priceRange: '$$',
+  jobTitle: 'Produtor Musical & DJ',
   image: '/nall.png',
-  description: 'DJ em Pirapora, especialista em Rock, Eletrônico e Brasilidades para festas e eventos.',
+  description: 'Produtor Musical & DJ especializado em Melodic Techno e Progressive House. Serviços de produção musical, mixagem, masterização e composição.',
   url: 'https://nall.art.br',
-  geo: {
-    '@type': 'GeoCoordinates',
-    latitude: -17.3494,
-    longitude: -44.9425,
-  },
-  openingHoursSpecification: [
-    {
-      '@type': 'OpeningHoursSpecification',
-      dayOfWeek: [
-        'Monday',
-        'Tuesday',
-        'Wednesday',
-        'Thursday',
-        'Friday',
-        'Saturday',
-        'Sunday',
-      ],
-      opens: '00:00',
-      closes: '23:59',
-    },
-  ],
+  email: 'contato@nall.art.br',
   sameAs: [
     'https://www.instagram.com/nall.dj/',
+    'https://soundcloud.com/kosmophonic',
+    'https://tiktok.com/nall.dj',
+  ],
+  knowsAbout: [
+    'Produção Musical',
+    'Mixagem',
+    'Masterização',
+    'Composição',
+    'Melodic Techno',
+    'Progressive House',
+    'DJ',
   ],
 };

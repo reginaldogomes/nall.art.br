@@ -4,22 +4,22 @@ import { motion } from "framer-motion";
 
 const repertoireItems = [
   {
-    title: "Rock Alternativo & Clássicos",
-    color: "text-green-400",
+    title: "Melodic Techno",
+    color: "text-cyan-400",
     description:
-      "O melhor do rock para seu evento em Pirapora. De Radiohead a Arctic Monkeys, passando por clássicos como Queen, Nirvana e The Cure. Um set para amantes de guitarras, atitude e nostalgia.",
+      "A fusão perfeita entre a força do techno e a emoção das melodias. Beats hipnóticos e sintetizadores profundos que criam uma viagem sonora única.",
   },
   {
-    title: "House, Techno & Melodic",
-    color: "text-blue-400",
+    title: "Progressive House",
+    color: "text-purple-400",
     description:
-      "A batida perfeita para festas eletrônicas em Pirapora. Do groove do House ao som hipnótico do Melodic Techno, uma jornada sonora com kicks potentes e atmosferas imersivas.",
+      "Construções longas e envolventes, com camadas de harmonia que evoluem progressivamente. A trilha sonora ideal para momentos de introspecção e êxtase.",
   },
   {
-    title: "Brasilidades, Lounge & Tropicais",
-    color: "text-yellow-400",
+    title: "Dark & Emotional",
+    color: "text-red-400",
     description:
-      "O toque brasileiro que seu evento em Pirapora precisa. Remixes de samba-rock, MPB e sons tropicais, ideal para bares, lounges e sunsets vibrantes.",
+      "Atmosferas densas e sentimentais. Música com propósito, que toca em feridas e cura através da dança. O lado mais profundo e artístico da música eletrônica.",
   },
 ];
 
@@ -37,7 +37,7 @@ const RepertoireSection = () => (
         {...fadeIn(0)}
         className="text-3xl md:text-4xl font-bold text-center mb-12"
       >
-        Repertório de DJ para Festas em Pirapora
+        Identidade Musical
       </motion.h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
         {repertoireItems.map((item, index) => (

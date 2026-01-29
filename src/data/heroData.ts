@@ -1,28 +1,32 @@
 export const heroData = {
   whatsappLink:
-    "https://wa.me/5531999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20serviços%20de%20DJ.",
+    "https://wa.me/5531999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20produção%20musical%20e%20colaborações.",
 
   heading: {
-    text: "Logo", // pode ser substituído por componente ou string
+    text: "NALL – Produtor Musical & DJ",
   },
+
+  subtitle: "Produção Musical • Mixagem • Masterização • Composição",
 
   highlights: [
     {
-      textBefore: "Som com ",
-      highlight: "identidade",
+      textBefore: "Produção musical com ",
+      highlight: "identidade sonora",
       color: "oklch(80% 0.2 200)",
-      textAfter: " para o seu evento",
+      textAfter: " única",
     },
   ],
 
   description: [
     {
-      text: "Rock • Eletrônico • Brasilidades com personalidade única. Atende em todo o Brasil.",
+      text: "Melodic Techno • Progressive House • Produção profissional para artistas e projetos.",
     },
   ],
 
+  email: "contato@nall.art.br",
+
   cta: {
-    label: "Chamar no WhatsApp",
-    icon: "FaWhatsapp", // pode usar dynamic import
+    label: "Solicitar Orçamento",
+    icon: "FaWhatsapp",
   },
 };

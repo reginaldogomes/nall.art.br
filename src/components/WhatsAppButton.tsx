@@ -3,7 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 const WhatsAppButton = () => {
   // Dados agora fixos dentro do componente
   const phoneNumber = "5531998811678";
-  const message = "Olá! Gostaria de fazer um orçamento para um evento.";
+  const message = "Olá! Gostaria de saber mais sobre serviços de produção musical.";
 
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
     message
@@ -58,7 +58,7 @@ const WhatsAppButton = () => {
         >
           <FaWhatsapp className="h-5 w-5 text-[#128C7E]" />
         </div>
-        <span className="text-sm md:text-base">Agendar pelo WhatsApp</span>
+        <span className="text-sm md:text-base">Falar no WhatsApp</span>
       </div>
     </a>
   );

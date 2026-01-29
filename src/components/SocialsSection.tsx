@@ -40,7 +40,7 @@ export const SocialsSection = () => {
           {...fadeIn(0)}
           className="mb-8 text-3xl font-bold md:text-4xl"
         >
-          Siga o DJ Nall em Pirapora nas Redes
+          Siga NALL nas Redes
         </motion.h2>
         <motion.div
           {...fadeIn(0.2)}

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { localBusinessSchema } from "@/lib/schema";
+import { personSchema } from "@/lib/schema";
 import { GoogleTagManager } from "@/components/GoogleTagManager";
 import { Main } from "@/components/Main";
 import { Navbar } from "@/components/Navbar";
@@ -9,34 +9,38 @@ import { orbitron, exo2 } from "@/fonts"; // ajuste o caminho se necessário
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://nall.art.br"),
-  title: "DJ em Pirapora e Região – NALL | Rock, Eletrônico e Brasilidades",
+  title: "NALL | Produtor Musical & DJ - Produção Musical, Mixagem e Masterização",
   description:
-    "Procurando DJ em Pirapora? NALL é especialista em Rock, Eletrônico e Brasilidades, criando a atmosfera perfeita para seu evento, festa ou bar. Som com identidade e versatilidade.",
+    "NALL - Produtor Musical & DJ especializado em Melodic Techno e Progressive House. Serviços de produção musical, mixagem, masterização e composição. Entre em contato: contato@nall.art.br",
   keywords: [
-    "DJ em Pirapora",
-    "DJ para festas em Pirapora",
-    "DJ eventos Pirapora",
-    "DJ Rock e Eletrônico em Pirapora",
-    "Contratar DJ em Pirapora",
-    "DJ para casamento em Pirapora",
-    "DJ para bar em Pirapora",
-    "DJ Brasilidades",
+    "Produtor Musical",
+    "Produção Musical",
+    "Mixagem",
+    "Masterização",
+    "Melodic Techno",
+    "Progressive House",
+    "DJ",
+    "Composição Musical",
+    "NALL",
+    "Techno Melódico",
+    "Música Eletrônica",
+    "Estúdio Musical",
   ],
   openGraph: {
     url: "https://nall.art.br/",
     type: "website",
-    title: "DJ em Pirapora e Região – NALL | Rock, Eletrônico e Brasilidades",
+    title: "NALL | Produtor Musical & DJ - Produção Musical Profissional",
     description:
-      "Procurando DJ em Pirapora? NALL é especialista em Rock, Eletrônico e Brasilidades, criando a atmosfera perfeita para seu evento, festa ou bar. Som com identidade e versatilidade.",
+      "Produtor Musical & DJ especializado em Melodic Techno e Progressive House. Serviços de produção, mixagem, masterização e composição. Contato: contato@nall.art.br",
     images: [
       "https://opengraph.b-cdn.net/production/images/2264deb7-f9e8-4e44-91c7-843fc1ce8954.png?token=-pO8f9W7Ud-W93uSNBGZlGjAzcxm6BLriTqkvtpbYXM&height=402&width=402&expires=33298872008",
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "DJ em Pirapora e Região – NALL | Rock, Eletrônico e Brasilidades",
+    title: "NALL | Produtor Musical & DJ - Produção Musical Profissional",
     description:
-      "Procurando DJ em Pirapora? NALL é especialista em Rock, Eletrônico e Brasilidades, criando a atmosfera perfeita para seu evento, festa ou bar. Som com identidade e versatilidade.",
+      "Produtor Musical & DJ especializado em Melodic Techno e Progressive House. Produção, mixagem e masterização. Contato: contato@nall.art.br",
     images: [
       "https://opengraph.b-cdn.net/production/images/2264deb7-f9e8-4e44-91c7-843fc1ce8954.png?token=-pO8f9W7Ud-W93uSNBGZlGjAzcxm6BLriTqkvtpbYXM&height=402&width=402&expires=33298872008",
     ],
@@ -57,7 +61,7 @@ export default function RootLayout({
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
         />
       </head>
       <body
