@@ -8,7 +8,7 @@ interface LogoProps {
 }
 
 const Logo = ({
-  alt = "Nall - Deejay and Music Producer",
+  alt = "NALL MUSIC - Deejay and Music Producer",
   aspectRatio,
   className,
 }: LogoProps) => {

@@ -3,7 +3,7 @@ export const heroData = {
     "https://wa.me/5531999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20produção%20musical%20e%20colaborações.",
 
   heading: {
-    text: "NALL – Produtor Musical & DJ",
+    text: "NALL MUSIC – Produtor Musical & DJ",
   },
 
   subtitle: "Produção Musical • Mixagem • Masterização • Composição",

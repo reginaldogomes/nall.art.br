@@ -8,7 +8,7 @@ const aboutData = {
   title: "NALL: Produtor Musical & DJ",
   avatar: {
     src: "/nall.png", // Substitua pela URL da sua imagem
-    alt: "Foto de perfil do NALL - Produtor Musical",
+    alt: "Foto de perfil do NALL MUSIC - Produtor Musical",
     fallback: "NL",
   },
   description: [

@@ -12,7 +12,7 @@ export function Footer() {
           <div className="text-center md:text-left">
             <h3 className="text-lg font-semibold text-white mb-3 flex items-center justify-center md:justify-start gap-2">
               <Music className="h-5 w-5 text-cyan-400" />
-              NALL
+              NALL MUSIC
             </h3>
             <p className="text-sm text-zinc-400">
               Produtor Musical especializado em Melodic Techno e Progressive House.
@@ -57,7 +57,7 @@ export function Footer() {
         {/* Divisória e Copyright */}
         <div className="border-t border-zinc-800 pt-6">
           <p className="text-center text-sm text-muted-foreground">
-            © {currentYear} <span className="font-semibold text-cyan-400">NALL</span> – Produtor Musical. Todos os direitos reservados.
+            © {currentYear} <span className="font-semibold text-cyan-400">NALL MUSIC</span> – Produtor Musical. Todos os direitos reservados.
           </p>
         </div>
       </div>

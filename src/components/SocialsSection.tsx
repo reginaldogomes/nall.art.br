@@ -18,7 +18,7 @@ export const SocialsSection = () => {
           {...fadeIn(0)}
           className="mb-8 text-3xl font-bold md:text-4xl"
         >
-          Siga NALL nas Redes
+          Siga NALL MUSIC nas Redes
         </motion.h2>
         <motion.div
           {...fadeIn(0.2)}

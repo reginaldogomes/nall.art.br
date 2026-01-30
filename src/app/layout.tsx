@@ -9,9 +9,9 @@ import { orbitron, exo2 } from "@/fonts"; // ajuste o caminho se necessário
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://nall.art.br"),
-  title: "NALL | Produtor Musical & DJ - Produção Musical, Mixagem e Masterização",
+  title: "NALL MUSIC | Produtor Musical & DJ - Produção Musical, Mixagem e Masterização",
   description:
-    "NALL - Produtor Musical & DJ especializado em Melodic Techno e Progressive House. Serviços de produção musical, mixagem, masterização e composição. Entre em contato: contato@nall.art.br",
+    "NALL MUSIC - Produtor Musical & DJ especializado em Melodic Techno e Progressive House. Serviços de produção musical, mixagem, masterização e composição. Entre em contato: ozzynall@gmail.com",
   keywords: [
     "Produtor Musical",
     "Produção Musical",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     "Progressive House",
     "DJ",
     "Composição Musical",
-    "NALL",
+    "NALL MUSIC",
     "Techno Melódico",
     "Música Eletrônica",
     "Estúdio Musical",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     url: "https://nall.art.br/",
     type: "website",
-    title: "NALL | Produtor Musical & DJ - Produção Musical Profissional",
+    title: "NALL MUSIC | Produtor Musical & DJ - Produção Musical Profissional",
     description:
       "Produtor Musical & DJ especializado em Melodic Techno e Progressive House. Serviços de produção, mixagem, masterização e composição. Contato: contato@nall.art.br",
     images: [
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "NALL | Produtor Musical & DJ - Produção Musical Profissional",
+    title: "NALL MUSIC | Produtor Musical & DJ - Produção Musical Profissional",
     description:
       "Produtor Musical & DJ especializado em Melodic Techno e Progressive House. Produção, mixagem e masterização. Contato: contato@nall.art.br",
     images: [

@@ -4,7 +4,7 @@ import { WithContext, Person } from 'schema-dts';
 export const personSchema: WithContext<Person> = {
   '@context': 'https://schema.org',
   '@type': 'Person',
-  name: 'NALL',
+  name: 'NALL MUSIC',
   jobTitle: 'Produtor Musical & DJ',
   image: '/nall.png',
   description: 'Produtor Musical & DJ especializado em Melodic Techno e Progressive House. Serviços de produção musical, mixagem, masterização e composição.',
