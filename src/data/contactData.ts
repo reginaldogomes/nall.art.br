@@ -1,8 +1,8 @@
 import { Instagram } from "lucide-react";
-import { SiSoundcloud, SiTiktok } from "react-icons/si";
+import { SiSoundcloud, SiSpotify, SiTiktok } from "react-icons/si";
 
 export const contactData = {
-  email: "contato@nall.art.br",
+  email: "ozzynall@gmail.com",
   phone: "5531998811678",
   socials: [
     {
@@ -22,6 +22,12 @@ export const contactData = {
       href: "https://soundcloud.com/nallmusic",
       icon: SiSoundcloud,
       hoverColor: "hover:text-[#FF5500]",
+    },
+    {
+      name: "Spotify",
+      href: "https://open.spotify.com/artist/5A34rQBiHEUvEHOL3eS61m",
+      icon: SiSpotify,
+      hoverColor: "hover:text-[#1DB954]",
     },
   ],
 };

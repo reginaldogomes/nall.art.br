@@ -7,7 +7,7 @@ const producaoData = {
   title: "Produção Musical",
   description:
     "Com experiência em música eletrônica e performance ao vivo, NALL atua em estúdio oferecendo produção musical profissional, unindo técnica, sensibilidade e identidade sonora própria.",
-  email: "contato@nall.art.br",
+  email: "ozzynall@gmail.com",
   services: [
     {
       icon: Music,

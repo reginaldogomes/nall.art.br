@@ -9,7 +9,7 @@ export const personSchema: WithContext<Person> = {
   image: '/nall.png',
   description: 'Produtor Musical & DJ especializado em Melodic Techno e Progressive House. Serviços de produção musical, mixagem, masterização e composição.',
   url: 'https://nall.art.br',
-  email: 'contato@nall.art.br',
+  email: 'ozzynall@gmail.com',
   sameAs: [
     'https://www.instagram.com/nall.dj/',
     'https://soundcloud.com/kosmophonic',

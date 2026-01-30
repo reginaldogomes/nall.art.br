@@ -12,7 +12,7 @@ const navLinks = [
   { href: "/portfolio", label: "Trabalhos" },
 ];
 
-const contactEmail = "contato@nall.art.br";
+const contactEmail = "ozzynall@gmail.com";
 
 export function Navbar() {
   const pathname = usePathname();

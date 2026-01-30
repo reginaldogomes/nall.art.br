@@ -15,7 +15,7 @@ const heroData = {
     part2: "e Emocional",
   },
   genres: "Melodic Techno • Progressive House • Emotional",
-  email: "contato@nall.art.br",
+  email: "ozzynall@gmail.com",
   contact: {
     phone: "5531998811678",
     message: "Olá! Gostaria de saber mais sobre produção musical e colaborações.",

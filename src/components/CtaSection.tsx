@@ -14,7 +14,7 @@ const ctaContent = {
   subheadline:
     "Entre em contato para produção musical, colaborações ou bookings.",
   subheadline2: "Disponível para projetos em todo o Brasil",
-  email: "contato@nall.art.br",
+  email: "ozzynall@gmail.com",
 };
 
 export function CtaSection() {

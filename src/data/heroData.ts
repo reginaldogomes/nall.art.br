@@ -23,7 +23,7 @@ export const heroData = {
     },
   ],
 
-  email: "contato@nall.art.br",
+  email: "ozzynall@gmail.com",
 
   cta: {
     label: "Solicitar Orçamento",
